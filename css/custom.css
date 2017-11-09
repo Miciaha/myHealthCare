@@ -10,6 +10,9 @@ footer.main-footer{
     padding-bottom: 40px !important;
 }
 
+.doc {
+    width: 40%;
+}
 /*navbar customizations*/
 nav.side-navbar .sidenav-header img{
     width: 100%;

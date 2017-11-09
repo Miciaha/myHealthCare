@@ -42,7 +42,7 @@
         <div class="main-menu">
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
             <li class="active"><a href="index.html"> <i class="icon-home"></i><span>Home</span></a></li>
-            <li> <a href="#"><i class="fa fa-calendar"></i><span>Appointments</span></a></li>
+            <li> <a href="#"><i class="fa fa-calendar"></i><span>Scheduling</span></a></li>
             <li> <a href="#"><i class="fa fa-plus-square"></i><span>Prescriptions</span></a></li>
             <li> <a href="#"><i class="fa fa-user-md"></i><span>Doctors</span></a></li>
             <li> <a href="#"><i class="fa fa-cog"> </i><span>Settings</span></a></li>
@@ -112,32 +112,38 @@
           <div class="row d-flex align-items-stretch">
             <div class="col-lg-4">
               <!-- Primary Physician-->
-              <div class="wrapper income text-center">
-                <div class="icon"><i class="icon-line-chart"></i></div>
-                <div class="number">126,418</div><strong class="text-primary">All Income</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+              <div class="wrapper text-center">
+                <h2 class="display h4">Primary Physician</h2>
+                <div><img class="img-fluid rounded-circle doc" src="img/doc.jpg">
+                  <div style="padding-top: 10px"><h4>Dr. Alissa Thomas</h4></div>
+                  <div>
+                    <button class="btn btn-info text-left">Message</button>
+                    <button class="btn btn-primary text-center">Check-Up</button>
+                    <button class="btn btn-warning text-right">Doc Notes</button>
+
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4">
               <!-- Prescription Reminders-->
               <div class="wrapper data-usage">
-                <h2 class="display h4"><a href="#">Refill Reminder</a></h2>
+                <h2 class="display h4 text-center"><a href="#">Refill Reminder</a></h2>
                 <div class="row d-flex align-items-center">
                   <div class="col-sm-6">
                     <div class="d-flex align-items-center justify-content-center"><img class="img-fluid" src="img/refill.jpg"></div>
                   </div>
-                  <div class="col-sm-6"><strong class="text-danger">5 Remaining</strong><small>Escitalopram 10MG</small><span>30 Tablets</span></div>
+                  <div class="col-sm-6 text-left"><strong class="text-danger">5 Remaining</strong><small>Escitalopram 10MG</small><span>30 Tablets</span></div>
                 </div>
-                <p>It appears it's almost time to refill your prescription.<br> Would you like us to contact your local pharmacy?</p>
+                <p class="text-center">It appears it's almost time to refill your prescription.</p>
+                <div class="text-center" style="padding-top: 10px"><button class="btn btn-success">View Prescriptions</button></div>
               </div>
             </div>
               <!-- Upcoming Appointments-->
             <div class="col-lg-4">
               <div class="wrapper">
-                  <div id="recent-activities-wrapper" class="recent-activities">
-                    <div id="activites-header" class="card-header d-flex justify-content-between align-items-center">
-                      <h2 class="h5 display"><a href="#">Appointments</a></h2>
-                    </div>
+                      <h2 class="h5 display text-center"><a href="#">Appointments</a></h2>
+
                     <div id="activities-box" role="tabpanel" class="collapse show">
                       <ul class="activities list-unstyled">
                         <!-- Item-->
