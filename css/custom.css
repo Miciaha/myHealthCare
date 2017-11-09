@@ -1,1 +1,48 @@
 /* your styles go here */
+nav.side-navbar .sidenav-header img{
+    width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+}
+
+.rules {
+    display: none;
+}
+
+.logo{
+    color:grey;
+    font-weight: 800;
+}
+
+.text-primary{
+    color: #3185fc !important;
+}
+
+
+nav.navbar{
+    background: white;
+}
+
+nav.side-navbar{
+    color: #3b3b39 !important;
+    background: white;
+}
+nav.side-navbar
+    h2 {
+        color: #fff;
+    }
+
+    .sidenav-header {
+        background: #3185fc !important;
+    }
+
+    li.active a {
+        background: #3185fc !important;
+        color: white !important;
+    }
+
+    a {
+        color: #3b3b39 !important;
+    }
+
+
