@@ -1,4 +1,14 @@
-/* your styles go here */
+/*Footer modifications*/
+footer.main-footer{
+    background: #fff !important;
+}
+
+
+/*Home page body changes*/
+.health{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
 
 /*navbar customizations*/
 nav.side-navbar .sidenav-header img{
@@ -46,18 +56,3 @@ nav.side-navbar
     a {
         color: #3b3b39 !important;
     }
-
-
-
-
-/*Footer modifications*/
-footer.main-footer{
-    background: #fff !important;
-}
-
-
-/*Home page body changes*/
-.health{
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-}
