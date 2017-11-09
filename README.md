@@ -1,1 +1,2 @@
-#myHealthcare Application
+# myHealthCare Dashboard
+## Take Control of Your Health
