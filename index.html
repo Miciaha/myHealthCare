@@ -42,10 +42,14 @@
         <div class="main-menu">
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
             <li class="active"><a href="index.html"> <i class="icon-home"></i><span>Home</span></a></li>
-            <li> <a href="#"><i class="fa fa-calendar"></i><span>Scheduling</span></a></li>
+            <li> <a href="#"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
             <li> <a href="#"><i class="fa fa-plus-square"></i><span>Prescriptions</span></a></li>
-            <li> <a href="#"><i class="fa fa-user-md"></i><span>Doctors</span></a></li>
-            <li> <a href="#"><i class="fa fa-cog"> </i><span>Settings</span></a></li>
+            <li> <a href="#"><i class="fa fa-user-md"></i><span>Your Doctors</span></a></li>
+            <li> <a href="#"><i class="fa fa-book"></i><span>Records</span></a></li>
+            <li> <a href="#"><i class="fa fa-heart"></i><span>Health Insurance</span></a></li>
+            <li> <a href="#"><i class="fa fa-money"></i><span>Payments</span></a></li>
+            <li> <a href="#"><i class="fa fa-cog"></i><span>Settings</span></a></li>
+
           </ul>
         </div>
       </div>
@@ -92,21 +96,22 @@
       </header>
       <!-- Health Overview Section -->
       <section class="health">
+        <h2 style="color: lightgray; padding-left: 10px">Health Overview</h2>
         <div class="container-fluid">
-          <div class="row d-flex align-items-md-stretch card">
-            <div class="col-lg-8">
-              <!--Health Overview-->
-              <h2>Health Overview</h2>
+          <div style="padding-top: 15px" class="row card align-items-stretch">
+            <div class="d-flex flex-row">
+              <div class="col-lg-4">
+                <h4>Sleep History</h4>
+                <canvas id="lineCahrt" style="display: block"></canvas>
 
+              </div>
+              <div class="col-lg-4">
+                <h4>Blood Pressure</h4>
+              </div>
             </div>
-            <div class="col-lg-4">
-
-            </div>
-          </div>
-
         </div>
       </section>
-      <!-- Contact Section-->
+      <!-- Information Section-->
       <section class="statistics section-padding section-no-padding-bottom">
         <div class="container-fluid">
           <div class="row d-flex align-items-stretch">
@@ -154,7 +159,8 @@
                               <div class="date"> <span>9:00 am</span><span class="text-info">Tomorrow</span></div>
                             </div>
                             <div class="col-8 content"><strong>Dr. Williams</strong>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                              <p>Podiatrist</p>
+                              <p></p>
                             </div>
                           </div>
                         </li>
