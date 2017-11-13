@@ -4,7 +4,7 @@ $(document).ready(function () {
     'use strict';
 
     // Main Template Color
-    var brandPrimary = '#33b35a';
+    var brandPrimary = '#3185fc';
 
     // ------------------------------------------------------- //
     // Custom Scrollbar
@@ -78,13 +78,38 @@ $(document).ready(function () {
     // ------------------------------------------------------- //
     // Jquery Progress Circle
     // ------------------------------------------------------ //
-    var progress_circle = $("#progress-circle").gmpc({
-        color: brandPrimary,
-        line_width: 5,
-        percent: 17
-    });
-    progress_circle.gmpc('animate', 17, 3000);
+    var progress_circle = $("bp-progress").gmpc({
 
+        // color
+        color: "#000000",
+
+        // height
+        height: "300px",
+
+        // width
+        width: "300px",
+
+        // line width
+        line_width: 8,
+
+        // stating value
+        starting_position: 25,
+
+        // max value
+        percent: 100,
+
+        // false = counterclockwise
+        counter_clockwise: false,
+
+        // show value
+        percentage: true,
+
+        // custom counter text
+        text: ''
+
+
+    });
+    progress_circle.gmpc('animate',80,3000);
     // ------------------------------------------------------- //
     // External links to new window
     // ------------------------------------------------------ //

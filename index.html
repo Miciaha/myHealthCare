@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/progress.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -94,42 +95,10 @@
           </div>
         </nav>
       </header>
-      <!-- Health Overview Section -->
-      <section class="health">
-        <h2 style="color: lightgray; padding-left: 10px">Health Overview</h2>
-        <div class="container-fluid">
-          <div style="padding-top: 15px" class="row card align-items-stretch">
-            <div class="d-flex flex-row">
-              <div class="col-lg-4">
-                <h4>Sleep History</h4>
-                <canvas id="lineCahrt" style="display: block"></canvas>
-
-              </div>
-              <div class="col-lg-4">
-                <h4>Average Blood Pressure</h4>
-              </div>
-            </div>
-        </div>
-      </section>
       <!-- Information Section-->
       <section class="statistics section-padding section-no-padding-bottom">
         <div class="container-fluid">
           <div class="row d-flex align-items-stretch">
-            <div class="col-lg-4">
-              <!-- Primary Physician-->
-              <div class="wrapper text-center">
-                <h2 class="display h4">Primary Physician</h2>
-                <div><img class="img-fluid rounded-circle doc" src="img/doc.jpg">
-                  <div style="padding-top: 10px"><h4>Dr. Alissa Thomas</h4></div>
-                  <div>
-                    <button class="btn btn-info text-left">Message</button>
-                    <button class="btn btn-primary text-center">Check-Up</button>
-                    <button class="btn btn-warning text-right">Doc Notes</button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="col-lg-4">
               <!-- Prescription Reminders-->
               <div class="wrapper data-usage">
@@ -144,33 +113,78 @@
                 <div class="text-center" style="padding-top: 10px"><button class="btn btn-success">View Prescriptions</button></div>
               </div>
             </div>
-              <!-- Upcoming Appointments-->
+            <!-- Upcoming Appointments-->
             <div class="col-lg-4">
               <div class="wrapper">
-                      <h2 class="h5 display text-center"><a href="#">Appointments</a></h2>
+                <h2 class="h5 display text-center"><a href="#">Appointments</a></h2>
 
-                    <div id="activities-box" role="tabpanel" class="collapse show">
-                      <ul class="activities list-unstyled">
-                        <!-- Item-->
-                        <li>
-                          <div class="row">
-                            <div class="col-4 date-holder text-right">
-                              <div class="icon"><i class="icon-clock"></i></div>
-                              <div class="date"> <span>9:00 am</span><span class="text-info">Tomorrow</span></div>
-                            </div>
-                            <div class="col-8 content"><strong>Dr. Williams</strong>
-                              <p>Podiatrist</p>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                <div id="activities-box" role="tabpanel" class="collapse show">
+                  <ul class="activities list-unstyled">
+                    <!-- Item-->
+                    <li>
+                      <div class="row">
+                        <div class="col-4 date-holder text-right">
+                          <div class="icon"><i class="icon-clock"></i></div>
+                          <div class="date"> <span>9:00 am</span><span class="text-info">Tomorrow</span></div>
+                        </div>
+                        <div class="col-8 content"><strong>Dr. Williams</strong>
+                          <p>Podiatrist</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- Primary Physician-->
+              <div class="wrapper text-center">
+                <h2 class="display h4">Primary Physician</h2>
+                <div><img class="img-fluid rounded-circle doc" src="img/doc.jpg">
+                  <div style="padding-top: 10px"><h4>Dr. Alissa Thomas</h4></div>
+                  <div class="d-flex justify-content-between">
+                    <button class="col-4-md btn btn-info">Consultation</button>
+                    <button class="col-4-md btn btn-primary">Check-Up</button>
+                    <button class="col-4-md btn btn-warning">Doc Notes</button>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- Health Overview Section -->
+      <section class="health">
+        <div class="container-fluid">
+          <div style="padding-top: 15px" class="row card align-items-stretch">
+            <div class="d-flex flex-row">
+              <div class="col-lg-4 text-center">
+                <h4 class="card-header">Sleep History</h4>
+                <canvas id="sleephistory" style="display: block; padding-top: 10px"></canvas>
+                <p>Your average sleep time is <b>6.3 hours</b>. It is advised that you get <b>7-9 hours </b> of sleep per night.</p>
+              </div>
+              <div class="col-lg-8 text-center">
+                <h4 class="card-header text-left">Blood Pressure</h4>
+                <div class="row d-flex" style="padding-top: 10px">
+                  <div class="col-lg-4">
+                    <h5 style="padding-bottom: 10px">Current: </h5>
+                    <h5>Systolic: 115 </h5>
+                    <h5>Diastolic: 76</h5>
+                    <h5>Pulse: 64</h5>
+                    <h5 style="color: #28a745; padding-bottom: 5px">Excellent</h5>
+                    <button class="btn btn-success">Refresh</button>
+                  </div>
+                  <div class="col-lg-8 text-left">
+                    <h5>Daily Averages: </h5>
+                    <canvas id="bloodPressureChart"></canvas>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+    </div>
     <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"> </script>
@@ -182,6 +196,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="js/charts-home.js"></script>
     <script src="js/front.js"></script>
+    <script src="js/plugin.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>
