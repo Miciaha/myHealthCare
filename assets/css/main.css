@@ -11,14 +11,14 @@ body {
   backface-visibility: hidden;
 }
 a {
-  color: #12c2d6;
+  color: #fff;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 a:hover {
-  color: #e76c3c;
+  color: lawngreen;
 }
 .row {
   padding: 80px 0px;
@@ -75,7 +75,7 @@ a:hover {
 }
 .navbar-default .navbar-nav > .active,
 .navbar-default .navbar-nav li:hover {
-  background: #12c2d6;
+  background: #2A324B;
   padding-bottom: 5px;
   color: #fff;
 }
@@ -113,7 +113,7 @@ a:hover {
 #services h3 {
   margin-top: 0;
   font-size: 28px;
-  color: #12c2d6;
+  color: #3184fb;
 }
 /*Portfolio*/
 #portfolio {
@@ -164,7 +164,7 @@ a:hover {
   background: #fff;
 }
 #about {
-  background: #34495e;
+  background: #3184fb;
   color: #fff;
 }
 #about p {
