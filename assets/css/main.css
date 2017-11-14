@@ -11,7 +11,7 @@ body {
   backface-visibility: hidden;
 }
 a {
-  color: #e74c3c;
+  color: #12c2d6;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -37,7 +37,7 @@ a:hover {
   color: #fff;
 }
 .btn-common:hover {
-  background: #e74c3c;
+  background: #12c2d6;
   color: #fff;
 }
 
@@ -75,7 +75,7 @@ a:hover {
 }
 .navbar-default .navbar-nav > .active,
 .navbar-default .navbar-nav li:hover {
-  background: #e74c3c;
+  background: #12c2d6;
   padding-bottom: 5px;
   color: #fff;
 }
@@ -98,7 +98,7 @@ a:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 #hero-area {
-  background: #34495e;
+  background: #3184fb;
   color: #fff;
 }
 #hero-area .btn {
@@ -113,7 +113,7 @@ a:hover {
 #services h3 {
   margin-top: 0;
   font-size: 28px;
-  color: #e74c3c;
+  color: #12c2d6;
 }
 /*Portfolio*/
 #portfolio {
