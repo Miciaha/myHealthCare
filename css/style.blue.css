@@ -279,12 +279,12 @@ button {
   padding-bottom: 0;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container-fluid {
     padding: 0 50px;
   }
 }
-
+*/
 /*
 * ==========================================================
 *     Main NAVBAR
